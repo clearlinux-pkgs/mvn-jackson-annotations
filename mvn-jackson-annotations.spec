@@ -4,17 +4,22 @@
 #
 Name     : mvn-jackson-annotations
 Version  : 2.1.5
-Release  : 1
-URL      : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.jar
-Source0  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.jar
-Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.pom
+Release  : 2
+URL      : https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.1.5.tar.gz
+Source0  : https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.1.5.tar.gz
+Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.jar
+Source2  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: mvn-jackson-annotations-data = %{version}-%{release}
 
 %description
-No detailed description available
+# Overview
+This project contains general purpose annotations for
+Jackson Data Processor, used on value and handler types.
+The only annotations not included are ones that require dependency
+to the [Databind package](/FasterXML/jackson-databind).
 
 %package data
 Summary: data components for the mvn-jackson-annotations package.
@@ -30,10 +35,10 @@ data components for the mvn-jackson-annotations package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5
 
 
 %files
