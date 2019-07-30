@@ -4,7 +4,7 @@
 #
 Name     : mvn-jackson-annotations
 Version  : 2.1.5
-Release  : 6
+Release  : 7
 URL      : https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.1.5.tar.gz
 Source0  : https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.1.5.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.jar
