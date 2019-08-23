@@ -4,21 +4,23 @@
 #
 Name     : mvn-jackson-annotations
 Version  : 2.1.5
-Release  : 7
+Release  : 8
 URL      : https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.1.5.tar.gz
 Source0  : https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.1.5.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.jar
 Source2  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.pom
 Source3  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar
 Source4  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom
-Source5  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar
-Source6  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom
-Source7  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.jar
-Source8  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.pom
-Source9  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
-Source10  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
-Source11  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.jar
-Source12  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.pom
+Source5  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.jar
+Source6  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.pom
+Source7  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar
+Source8  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom
+Source9  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.jar
+Source10  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.pom
+Source11  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
+Source12  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
+Source13  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.jar
+Source14  : https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -40,6 +42,7 @@ data components for the mvn-jackson-annotations package.
 
 
 %prep
+%setup -q -n jackson-annotations-jackson-annotations-2.1.5
 
 %build
 
@@ -56,29 +59,35 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/c
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0
 cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.jar
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.jar
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.pom
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.pom
 
 
 %files
@@ -90,6 +99,8 @@ cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.5/jackson-annotations-2.1.5.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom
+/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.jar
+/usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.2/jackson-annotations-2.8.2.jar

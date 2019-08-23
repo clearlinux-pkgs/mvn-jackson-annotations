@@ -1,18 +1,6 @@
 810e70614f65257e0cf4787a0f32f463d45b8084/jackson-annotations-2.1.5.tar.gz
 ef5b4f8e9aa1a822c2789397cee7d22bc7e96399/jackson-annotations-2.1.5.jar
 84a3ae9fd06ec86e7ab83bb937dc530dd4095c91/jackson-annotations-2.1.5.pom
-a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar
-74f0cf17283e921a4b78ce5a0588d22ffa26d832/jackson-annotations-2.6.0.pom
-7e08eafe72cbd11c955d92109108bd2bfaab979e/jackson-annotations-2.6.7.jar
-b6f23018063ad2969899f300ef0bcc903477ac12/jackson-annotations-2.6.7.pom
-a38d544583e90cf163b2e45e4a57f5c54de670d3/jackson-annotations-2.8.2.jar
-985cbe31d6a436cf340b835ef65a6307407521f2/jackson-annotations-2.8.2.pom
-07c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar
-1ef050f2a8b27be34031b10c2e3e068767851e8d/jackson-annotations-2.9.0.pom
-9056ec9db21c57d43219a84bb18c129ae51c6a5d/jackson-annotations-2.9.5.jar
-f8a0c0718003d0ba5b7d2cbf47ab5663bd013015/jackson-annotations-2.9.5.pom
-ef5b4f8e9aa1a822c2789397cee7d22bc7e96399/jackson-annotations-2.1.5.jar
-84a3ae9fd06ec86e7ab83bb937dc530dd4095c91/jackson-annotations-2.1.5.pom
 7e08eafe72cbd11c955d92109108bd2bfaab979e/jackson-annotations-2.6.7.jar
 b6f23018063ad2969899f300ef0bcc903477ac12/jackson-annotations-2.6.7.pom
 a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar
@@ -23,3 +11,5 @@ f8a0c0718003d0ba5b7d2cbf47ab5663bd013015/jackson-annotations-2.9.5.pom
 9056ec9db21c57d43219a84bb18c129ae51c6a5d/jackson-annotations-2.9.5.jar
 1ef050f2a8b27be34031b10c2e3e068767851e8d/jackson-annotations-2.9.0.pom
 07c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar
+7ef6440e71531604aa44a5eb62d4b466ffbf7e8f/jackson-annotations-2.6.6.jar
+228b27645b1b0b955f723b8b45a9a45f9c42f43e/jackson-annotations-2.6.6.pom
